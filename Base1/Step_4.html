@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Step 4</title>
-        <meta charset="UTF-8">
-    </head>
-    <body>
-        <form>
-            <label for="name">name : </label><input type="text" name="name" id="name"/>
-            <label for="surname">surname : </label><input type="text" name="surname" id="surname"/>
-            <label for="city">city : </label><input type="text" name="city" id="city"/>
-            <button  name="validate" id="validate">Validate</button>
-            kjkjkghg
-        </form>
-    </body>
+<head>
+    <title>Step 4</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <form>
+        <label for="name">name : </label><input type="text" name="name" id="name" />
+        <label for="surname">surname : </label><input type="text" name="surname" id="surname" />
+        <label for="city">city : </label><input type="text" name="city" id="city" />
+        <button name="validate" id="validate" onclick="ask()">Validate</button>
+        <script>
+            function ask()
+        {
+          var name = document.getElementById("name").value;
+          var surname = document.getElementById("surname").value;
+          var city = document.getElementById("city").value;
+          alert("Hello , "+name+" "+surname+", from "+city);
+        }
+        </script>
+    </form>
+</body>
 </html>
