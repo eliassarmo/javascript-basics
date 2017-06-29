@@ -10,13 +10,15 @@
 <img src="images/image1.jpg" id="image1"/>
 </body>
 <script type="text/javascript">
-    let img1 = document.querySelector('#image1');
+    const img1 = document.querySelector('#image1');
     const changeImageIn = function () {
         img1.src = 'images/image1_2.jpg';
     };
-    function changeImageOut() {
-       
+    const changeImageOut = function() {
         img1.src = 'images/image1.jpg' ;
+    }
+    const test = function(){
+        console.log("sdfdfs")
     }
     img1.addEventListener("mouseover", changeImageIn);
     img1.addEventListener("mouseout", changeImageOut);
